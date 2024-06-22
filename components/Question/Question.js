@@ -202,7 +202,7 @@ export const Question = ({
       <div className="w-[98%] mb-6">
         <Latex>{question.title}</Latex>
       </div>
-      {!question.isMultipleChoice ? (
+      {false ? (
         <>
           {isTestReport ? (
             <div>
@@ -433,7 +433,7 @@ export const Question = ({
             </>
           )}
 
-          {isForConcpetQuestionPracticeShowAnswer && (
+          {true && (
             <div>
               <div
                 className={answerStyle(
@@ -464,7 +464,7 @@ export const Question = ({
               </div>
             </div>
           )}
-          {isTestReport && (
+          {false && (
             <div>
               <div className={answerStyle(isCorrect, studentAnswer)}>
                 <span className="text-xl text-white">
