@@ -7,8 +7,13 @@ import { Switch } from '@/components/ui/switch'
 import { Label } from '@/components/ui/label'
 import { CSSEdit } from '@/components/TextEdit/CSSEdit'
 
-import Latex from 'react-latex'
-import 'katex/dist/katex.min.css'
+import 'katex/dist/katex.min.css';
+import LatexComponent from 'react-latex-next';
+
+export const Latex = ({ children }) => {
+  console.log(children);
+  return <LatexComponent>{children}</LatexComponent>;
+};
 
 import {
   studentAnserconvertLetterToNumber,

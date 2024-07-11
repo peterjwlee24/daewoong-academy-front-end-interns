@@ -2,8 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import acceptableAnswerTable from '@/components/TextEdit/images/acceptableAnswerTable.png'
 import { Separator } from '@/components/ui/separator'
-import Latex from 'react-latex'
-import 'katex/dist/katex.min.css'
+
+import 'katex/dist/katex.min.css';
+import Latex from 'react-latex-next';
 
 export const CSSEdit = ({ textString }) => {
   const processText = (text) => {
