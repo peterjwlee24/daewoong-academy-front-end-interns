@@ -14,6 +14,7 @@ export const Latex = ({ children }) => {
   console.log(children);
   return <LatexComponent>{children}</LatexComponent>;
 };
+import { normalizeLatexString } from '@/lib/utils'
 
 import {
   studentAnserconvertLetterToNumber,
@@ -205,7 +206,7 @@ export const Question = ({
         )}
       </div>
       <div className="w-[98%] mb-6">
-        <Latex>{question.title}</Latex>
+        <Latex>{normalizeLatexString(question.title)}</Latex>
       </div>
       {false ? (
         <>
@@ -296,7 +297,7 @@ export const Question = ({
                         />
                       ) : (
                         <>
-                          <Latex>{choice}</Latex>
+                          <Latex>{normalizeLatexString(choice)}</Latex>
                         </>
                       )}
                     </div>
@@ -426,7 +427,7 @@ export const Question = ({
                               currQuestionIndex={currQuestionIndex}
                               index={index}
                             >
-                              <Latex>{choice}</Latex>
+                              <Latex>{normalizeLatexString(choice)}</Latex>
                             </EliminationText>
                           )}
                         </div>

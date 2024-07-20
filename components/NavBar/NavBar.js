@@ -10,6 +10,8 @@ export default function NavBar({ zIndex }) {
       <Link href="/" className="sm:text-sm md:text-2xl ml-2">
         Daewoong <span className="text-yellow-300">Academy</span>
       </Link>
+      <Link href="/course" className="text-white mr-4">Courses</Link>
+      <Link href="/cart" className="text-white">Cart</Link>
     </nav>
   )
 }

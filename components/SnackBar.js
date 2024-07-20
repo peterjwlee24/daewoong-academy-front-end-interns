@@ -1,15 +1,8 @@
-import { X } from 'lucide-react'
+// components/SnackBar.jsx
+import React from 'react';
+import { X } from 'lucide-react';
 
-export const SnackBar = (
-  backgroundColor,
-  message,
-  handleFunction,
-  handleFunctionInput,
-) => {
-  console.log('sncak bar running')
-  console.log('backgroundColor: ', backgroundColor)
-  console.log('message: ', message)
-
+export const SnackBar = ({ backgroundColor, message, handleFunction, handleFunctionInput }) => {
   return (
     <div
       style={{
@@ -30,5 +23,6 @@ export const SnackBar = (
         <X />
       </button>
     </div>
-  )
-}
+  );
+};
+
