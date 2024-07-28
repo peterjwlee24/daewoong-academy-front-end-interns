@@ -27,6 +27,16 @@ export const CSSEdit = ({ textString }) => {
                 height={400}
               />
             );
+          } else {
+            return (
+                <Image
+                key={index}
+                className="m-auto"
+                src={imageSrc}
+                width={325}
+                height={325}
+              />
+            )
           }
         }
 
